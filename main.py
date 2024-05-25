@@ -8,9 +8,11 @@ from nltk.tokenize import word_tokenize
 nltk.download('punkt')
 
 # Load Word2Vec model
-# wv = KeyedVectors.load_word2vec_format('Word2Vec/GoogleNews-vectors-negative300.bin.gz', binary=True, limit=1000000)
-# wv.save_word2vec_format('results/vectors.csv')
-wv = KeyedVectors.load_word2vec_format('vectors.csv')
+# Need to download the `GoogleNews-vectors-negative300.bin.gz` and copy at the below path
+wv = KeyedVectors.load_word2vec_format('Word2Vec/GoogleNews-vectors-negative300.bin.gz', binary=True, limit=1000000)
+wv.save_word2vec_format('results/vectors.csv')
+# wv = KeyedVectors.load_word2vec_format('vectors.csv')
+
 
 
 # Load phrases
